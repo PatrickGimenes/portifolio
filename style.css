@@ -1,14 +1,52 @@
+#habilidades,
+#sobre {
+  padding: 40px 20px;
+}
+.project,
+.skill {
+  transition: transform 0.3s ease-in-out;
+}
+#contatos,
+section {
+  background-color: #fff;
+  padding: 20px;
+}
+#contatos h2,
 body {
-  opacity: 1; /* Inicialmente, define a opacidade para 0 (invisível) */
-  animation: fadeIn ease-in-out 1.5s; /* Aplica a animação fadeIn com duração de 1 segundo */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  padding-top: 60px;
-  background-color: #f4f4f4;
   color: #333;
 }
-
+.contact-list i,
+.technologies img {
+  margin-right: 5px;
+}
+.contact-list a,
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.project-link,
+footer,
+header {
+  background-color: #333;
+  color: #fff;
+}
+footer,
+header,
+nav a {
+  color: #fff;
+}
+body,
+footer p,
+nav ul {
+  margin: 0;
+}
+body {
+  opacity: 1;
+  animation: 1.5s ease-in-out fadeIn;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 60px 0 0;
+  background-color: #f4f4f4;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -22,109 +60,74 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  z-index: 10; /* Z-index elevado para garantir que a barra de navegação fique acima do conteúdo */
+  z-index: 10;
 }
-
+#habilidades,
+.profile-container {
+  justify-content: center;
+  display: flex;
+}
 .logo img {
   width: 50px;
   height: 50px;
 }
-
 nav {
   margin-right: 40px;
 }
-
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
 }
-
+.profile-picture,
 nav li {
   margin-right: 20px;
 }
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
+.about-content span,
+.contact-list a:hover,
+.text-wrapper span,
 nav a:hover {
-  color: #008000;
+  color: green;
 }
 section {
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-#sobre {
-  padding: 40px 20px;
-}
-
 .profile-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .profile-picture {
   border-radius: 50%;
   max-width: 200px;
-  margin-right: 20px;
 }
-
-.about-content {
-  max-width: 600px;
-}
-
-.about-content h2 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.about-content p {
-  text-align: justify;
-  margin-bottom: 30px;
-}
-
-.about-content span {
-  color: #008000;
-}
-
-#habilidades {
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-}
-
+.about-content,
 .text-wrapper {
   max-width: 600px;
 }
-
+.about-content h2,
 .text-wrapper h2 {
   text-align: center;
   margin-bottom: 50px;
 }
-
+.about-content p,
 .text-wrapper p {
   text-align: justify;
   margin-bottom: 30px;
 }
-.text-wrapper span {
-  color: #008000;
+#projetos h2,
+.button-wrapper,
+.contact-content,
+.project-content h3,
+.skill span,
+footer {
+  text-align: center;
 }
-
 .tech {
   display: flex;
   justify-content: center;
@@ -132,214 +135,101 @@ section {
 .skill {
   display: inline-block;
   margin: 20px 10px;
-  transition: transform 0.3s ease-in-out; /* Adiciona uma transição de 0.3 segundos para a propriedade transform */
 }
-
 .skill:hover {
-  transform: scale(
-    1.2
-  ); /* Aplica um aumento de escala ao passar o mouse (zoom de 20%) */
+  transform: scale(1.2);
 }
-
 .skill span {
-  text-align: center;
   display: block;
   margin-top: 5px;
   color: #555;
 }
-
 #projetos h2 {
   margin-bottom: 50px;
+  color: #333;
 }
 .project-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .project {
-  margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  width: calc(50% - 10px); /* 50% de largura com uma pequena margem à direita */
+  width: calc(50% - 10px);
   margin-bottom: 20px;
 }
-
 .project:hover {
   transform: scale(1.03);
 }
-
 .project-image {
   width: 100%;
   height: 50%;
-
   border-bottom: 2px solid #ddd;
 }
-
 .project-content {
   padding: 15px;
 }
-
-.project-content h3 {
-  text-align: center;
-}
-
-#projetos h2 {
-  color: #333;
-  text-align: center;
-}
-
-#projetos h3 {
+#projetos h3,
+.contact-list li {
   margin-bottom: 10px;
 }
-
 #projetos p {
   margin-top: 0;
 }
-
-.button-wrapper {
-  text-align: center;
-}
-
 .project-link {
   display: inline-block;
-  background-color: #333;
-  color: #fff;
   padding: 8px 15px;
   margin-top: 30px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
-
 .project-link:hover {
-  background-color: #008000;
+  background-color: green;
 }
-
 .technologies {
   margin-top: 10px;
 }
-
-.technologies img {
-  margin-right: 5px;
-}
-
-/* #curriculo {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.timeline-item {
-  position: relative;
-  padding: 20px;
-  background: #f0f0f0;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.timeline-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.timeline-content h3 {
-  margin-top: 0;
-}
-
-.date {
-  display: block;
-  margin-top: 10px;
-  color: #777;
-} */
-
 #contatos {
-  background-color: #fff;
-  padding: 20px;
   margin-top: 20px;
 }
-
 .contact-content {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
 }
-
-#contatos h2 {
-  color: #333;
-}
-
 #contatos p {
   color: #555;
 }
-
 .contact-list {
   list-style: none;
   padding: 0;
 }
-
-.contact-list li {
-  margin-bottom: 10px;
-}
-
 .contact-list i {
-  margin-right: 5px;
   color: #555;
 }
-
 .contact-list a {
-  text-decoration: none;
   color: #333;
-  font-weight: bold;
 }
-
-.contact-list a:hover {
-  color: #008000;
-}
-
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
   padding: 10px 0;
 }
-
-footer p {
-  margin: 0;
-}
-
 @media screen and (max-width: 768px) {
-  #projetos {
-    flex-direction: column;
-  }
-
+  .project,
+  .tech,
   .text-wrapper {
     width: 100%;
   }
-  .tech {
-    width: 100%;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-  }
-  .project {
-    width: 100%; /* 100% de largura em dispositivos móveis */
-  }
+  #projetos,
   .profile-container {
     flex-direction: column;
   }
-
+  .tech {
+    flex-wrap: wrap;
+  }
   .profile-picture {
     margin-bottom: 20px;
     margin-right: 0;
   }
-  /* .timeline-item {
-    width: 100%;
-  } */
 }
